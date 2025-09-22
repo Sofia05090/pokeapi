@@ -1,0 +1,3 @@
+function Favoritos(){
+    AudioListener("favoritos")
+}
