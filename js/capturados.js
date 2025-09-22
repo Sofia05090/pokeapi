@@ -1,3 +1,3 @@
 function Capturados(){
-    AudioListener("capturados")
+    document.getElementById("root").innerHTML="Capturados"
 }

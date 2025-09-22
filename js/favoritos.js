@@ -1,3 +1,3 @@
 function Favoritos(){
-    AudioListener("favoritos")
+    document.getElementById("root").innerHTML="Favoritos"
 }

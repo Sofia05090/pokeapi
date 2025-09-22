@@ -1,3 +1,3 @@
 function Informativa(){
-    AudioListener("informativa")
+    document.getElementById("root").innerHTML="Informativa"
 }

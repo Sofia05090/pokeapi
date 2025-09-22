@@ -1,3 +1,3 @@
 function Pokemon(){
-    AudioListener("pokemon")
+    document.getElementById("root").innerHTML="Alert"
 }
