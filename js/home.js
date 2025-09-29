@@ -58,7 +58,7 @@ function Home(filtro){
         
         // Agregar el evento click para filtrar por tipo
         btn.addEventListener("click", () => {
-            fil(tipos[i]); 
+            FiltroConexion(tipos[i]); 
         });
 
         // Agregar el botón al contenedor
