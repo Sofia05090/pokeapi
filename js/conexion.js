@@ -34,7 +34,7 @@ async function General() {
 General()
 
 async function FiltroConexion(filtroelegido){
-  pokesFiltrados = await conexion(filtroelegido)
+  pokesFiltrados = await conexion (filtroelegido)
   document.getElementById("la-lista").innerHTML = "";
   listaFiltro = GenerarLista(pokesFiltrados)
   document.getElementaryById("la-lista").innerHTML = listaFiltro
