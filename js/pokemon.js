@@ -37,11 +37,20 @@ function toggleFavorito(paramid, paramname) {
 }
 
 async function Detalle(h){
+
+    const root = document.getElementById("root");
+    root.innerHTML = "";
+    
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${h}`);
     const data = await res.json();
 
+    // Revisar si este Pokémon ya está en favoritos
+    favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+    esFavorito = favoritos.some(poke => poke.name === data.name);
+
     console.log(data)
     document.getElementById("root").innerHTML= `
+
     <section class="c-detalle">
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png" alt="${data.name}" height="120" width="auto">
         <p>${data.name}</p>
